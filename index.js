@@ -22,10 +22,16 @@ pullQuotes()
 
     mgNumber.value = ''
     mgNumber.focus()
+    let numTimes = Number(text)
 
-    var newParagraph = document.createElement('div')
-    newParagraph.innerHTML = pullQuotes()
-    
-    let row = document.querySelector('#meangirls-form')
-    row.append(newParagraph)
+    for (var i = 0; i < numTimes; i++) {
+      var newParagraph = document.createElement('div')
+      newParagraph.innerHTML = pullQuotes()
+
+      let row = document.querySelector('#meangirls-form')
+      row.append(newParagraph)
+    }
   })
+
+// part 1 getting the number
+// part 2 is looping that many times
