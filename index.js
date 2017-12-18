@@ -17,6 +17,10 @@ pullQuotes()
 
   form.addEventListener('submit', function (e) {
     e.preventDefault()
+    // Create meangirls-Number
+    //let meanGirlsParagraphs = document.createElement('div')
+
+
     let mgNumber = document.getElementById('meangirls-number')
     let text = mgNumber.value
 
@@ -25,16 +29,15 @@ pullQuotes()
     let numTimes = Number(text)
 
       if (!numTimes) {
-        alert("Enter a number and ONLY a number. God karen you're so stupid")
+        alert("Enter a number and ONLY a number. God Karen you're so stupid")
       }
 
       // let newParagraph = document.querySelector('.newParagraph-quotes')
       let row = document.querySelector('.mean-girls-container')
       let meanGirlsParagraphs = document.querySelector('#meangirls-paragraph')
-
-      console.log(meanGirlsParagraphs);
+      console.log(meanGirlsParagraphs)
       if(meanGirlsParagraphs) {
-        row.removeChild(meanGirlsParagraphs)
+        meanGirlsParagraphs.innerHTML = ''
       }
 
     for (var i = 0; i < numTimes; i++) {
@@ -47,4 +50,4 @@ pullQuotes()
     row.append(meanGirlsParagraphs)
   })
 
-// loop over the quote divs and remove them one by one. 
+// loop over the quote divs and remove them one by one.
