@@ -5,7 +5,7 @@ function getRandomNum (min, max) {
 }
 
 function pullQuotes () {
-  let random = getRandomNum(1, 9)
+  let random = getRandomNum(1, 13)
   let key = 'mgQuotes' + random
   return meanGirlsObject[key]
 }
