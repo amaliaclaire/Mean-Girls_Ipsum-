@@ -28,11 +28,23 @@ pullQuotes()
         alert("Enter a number and ONLY a number. God karen you're so stupid")
       }
 
-    for (var i = 0; i < numTimes; i++) {
-      var newParagraph = document.createElement('div')
-      newParagraph.innerHTML = pullQuotes()
+      // let newParagraph = document.querySelector('.newParagraph-quotes')
+      let row = document.querySelector('.mean-girls-container')
+      let meanGirlsParagraphs = document.querySelector('#meangirls-paragraph')
 
-      let row = document.querySelector('#meangirls-form')
-      row.append(newParagraph)
+      console.log(meanGirlsParagraphs);
+      if(meanGirlsParagraphs) {
+        row.removeChild(meanGirlsParagraphs)
+      }
+
+    for (var i = 0; i < numTimes; i++) {
+        // Adding new Quotes to the page
+      newParagraph = document.createElement('div')
+      newParagraph.className = "quote"
+      newParagraph.innerHTML = pullQuotes()
+      meanGirlsParagraphs.append(newParagraph)
     }
+    row.append(meanGirlsParagraphs)
   })
+
+// loop over the quote divs and remove them one by one. 
