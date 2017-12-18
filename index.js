@@ -24,6 +24,10 @@ pullQuotes()
     mgNumber.focus()
     let numTimes = Number(text)
 
+      if (!numTimes) {
+        alert("Enter a number and ONLY a number. God karen you're so stupid")
+      }
+
     for (var i = 0; i < numTimes; i++) {
       var newParagraph = document.createElement('div')
       newParagraph.innerHTML = pullQuotes()
@@ -32,6 +36,3 @@ pullQuotes()
       row.append(newParagraph)
     }
   })
-
-// part 1 getting the number
-// part 2 is looping that many times
