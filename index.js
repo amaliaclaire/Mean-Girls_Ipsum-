@@ -35,6 +35,7 @@ pullQuotes()
       // let newParagraph = document.querySelector('.newParagraph-quotes')
       let row = document.querySelector('.mean-girls-container')
       let meanGirlsParagraphs = document.querySelector('#meangirls-paragraph')
+
       console.log(meanGirlsParagraphs)
       if(meanGirlsParagraphs) {
         meanGirlsParagraphs.innerHTML = ''
@@ -45,6 +46,7 @@ pullQuotes()
       newParagraph = document.createElement('div')
       newParagraph.className = "quote"
       newParagraph.innerHTML = pullQuotes()
+
       meanGirlsParagraphs.append(newParagraph)
     }
     row.append(meanGirlsParagraphs)
