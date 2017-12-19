@@ -1,4 +1,10 @@
 
+.container-image{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .btn{
   background-color: #ff83c1;
   font-weight: bold;
@@ -8,6 +14,10 @@
  margin-left: auto;
  margin-right: auto;
  height: 140px;
+ position: absolute;
+ top: 30px;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
 
 .footer {
@@ -21,9 +31,10 @@
 }
 h1 {
    font-family: "Futura";
+   font-weight: bold;
    color: #A51789;
    text-align: center;
-   padding: -20px;
+   padding: 50px;
 }
 
 .quote {
@@ -33,6 +44,7 @@ h1 {
 .meanGirls-photo {
   height: 320px;
   position: absolute;
+  top: 110px;
   left: -50px;
 
 }
