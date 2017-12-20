@@ -49,6 +49,18 @@ h1 {
     text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
+.error-message {
+  font-family: "Futura";
+  font-size: 40px;
+  color: #e55ea2;
+  text-align: center;
+  background-color: black;
+}
+
 @media (min-width: 800px) {
 
   .mg-logo {
@@ -89,7 +101,7 @@ h1 {
     width: 70%;
     margin: auto;
     display: block;
-    border-radius: 5px; 
+    border-radius: 5px;
   }
 
   .footer {

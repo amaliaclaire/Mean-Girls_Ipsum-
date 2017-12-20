@@ -22,10 +22,12 @@ pullQuotes()
 
     mgNumber.value = ''
     mgNumber.focus()
+
+    let errorMessage = document.getElementsByClassName('error-message')
     let numTimes = Number(textboxNumber)
 
       if (!numTimes) {
-        alert("Enter a number and ONLY a number. God Karen you're so stupid")
+        errorMessage.classList.remove("hidden")
       }
 
       let row = document.querySelector('.mean-girls-container')
