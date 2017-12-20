@@ -48,3 +48,61 @@ h1 {
     margin-top: 100px;
     text-decoration: none;
 }
+
+@media (min-width: 800px) {
+
+  .mg-logo {
+    width: 60%;
+    margin: auto;
+    display: block;
+  }
+
+
+
+  h1 {
+    font-family: "Futura";
+    font-weight: bold;
+    font-size: 90px;
+    color: #A51789;
+    text-align: center;
+
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("https://media1.tenor.com/images/b85669993be2e956d13d10ea139a8b5e/tenor.gif?itemid=8071373");
+
+    /* Full height */
+    height: 60%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  body, html {
+    height: 100%;
+  }
+
+  .meanGirls-photo {
+    width: 70%;
+    margin: auto;
+    display: block;
+    border-radius: 5px; 
+  }
+
+  .footer {
+      text-align: center;
+      /* position: fixed; */
+      display: block;
+      width: 100%;
+      color: #fff;
+      background: #ff69b4;
+      padding: 15px;
+      margin-top: 100px;
+      text-decoration: none;
+  }
+
+
+}
