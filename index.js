@@ -23,19 +23,22 @@ pullQuotes()
     mgNumber.value = ''
     mgNumber.focus()
 
-    let errorMessage = document.getElementsByClassName('error-message')
+    let errorMessage = document.querySelector('.error-message')
     let numTimes = Number(textboxNumber)
 
-      if (!numTimes) {
-        errorMessage.classList.remove("hidden")
-      }
+    if (!numTimes) {
+      errorMessage.style.display = "block"
+      return
+    }
+    errorMessage.style.display = "none"
 
-      let row = document.querySelector('.mean-girls-container')
-      let meanGirlsParagraphs = document.querySelector('#meangirls-paragraph')
 
-      if(meanGirlsParagraphs) {
-        meanGirlsParagraphs.innerHTML = ''
-      }
+    let row = document.querySelector('.mean-girls-container')
+    let meanGirlsParagraphs = document.querySelector('#meangirls-paragraph')
+
+    if(meanGirlsParagraphs) {
+      meanGirlsParagraphs.innerHTML = ''
+    }
 
     for (var i = 0; i < numTimes; i++) {
       newParagraph = document.createElement('div')
